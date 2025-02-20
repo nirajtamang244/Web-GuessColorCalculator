@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body id="Main">
+	<h1>Welcome to webpage!</h1>
+	<div id= "title1">
+		Inorder to move to the Calculator section, you have to choose between the correct color.
+		If the color matches to the password color, you will be authorized.
+	</div>
+		<p>
+		<button id= "color"><b>Change Color</b></button>
+		<button id= "submit"><b>Submit</b></button>
+		</p>
+		<p id ="message">Click the "change color" and submit the correct color!</p>
+	
+</body>
+
+<!-- Calculator Section (Hidden by Default) -->
+<div id="calculator" style="display: none">
+    <h2>Calculator</h2>
+    <div id="calc-display">0</div>
+    
+    <div class="calc-buttons">
+        <button class="btn" onclick="appendNumber('7')">7</button>
+        <button class="btn" onclick="appendNumber('8')">8</button>
+        <button class="btn" onclick="appendNumber('9')">9</button>
+        <button class="btn operator" onclick="setOperator('+')">+</button>
+
+        <button class="btn" onclick="appendNumber('4')">4</button>
+        <button class="btn" onclick="appendNumber('5')">5</button>
+        <button class="btn" onclick="appendNumber('6')">6</button>
+        <button class="btn operator" onclick="setOperator('-')">−</button>
+
+        <button class="btn" onclick="appendNumber('1')">1</button>
+        <button class="btn" onclick="appendNumber('2')">2</button>
+        <button class="btn" onclick="appendNumber('3')">3</button>
+        <button class="btn operator" onclick="setOperator('*')">×</button>
+
+        <button class="btn" onclick="appendNumber('0')">0</button>
+        <button class="btn" onclick="clearDisplay()">C</button>
+        <button class="btn" onclick="calculateResult()">=</button>
+        <button class="btn operator" onclick="setOperator('/')">÷</button>
+    </div>
+</div>
+
+
+<script src="calc.js"></script>
